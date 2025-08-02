@@ -31,4 +31,4 @@ def fetch_data():
         ws.send(json.dumps(payload))
         while True:
             msg = json.loads(ws.recv())
-            if "candles"
+            if "candles" in msg:
